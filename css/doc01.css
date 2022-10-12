@@ -1,0 +1,251 @@
+body {
+  margin: 10px 1%;
+  background-image: url("../images/bandeau.jpg"); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;	
+  background-size: cover;
+
+}
+
+div.préparations p {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  background: rgba(255,255,255,0.7);
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+div.prep {
+  display: inline-block;
+  margin: 5px;
+  margin-top: 35px;
+}
+
+
+h1 {
+  background-image: url("../images/fond-ecran.jpg"); 
+  padding: 30px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-position: center;
+  background-size: 100% auto;
+  color: #ffc987;
+  box-shadow: 4px 4px 8px 5px rgba(0,0,0,0.4);
+
+}
+
+table, td {
+  border: 2px solid black;
+  text-align: center;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  color: black;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  font-weight: bolder;
+  background-color: whitesmoke;
+
+}
+
+thead {
+  background-color: orange;
+  color: black;
+}
+
+div.prem {
+  background: rgba(255,255,255,0.8);
+  padding-bottom: 50px;
+}
+
+table {
+  height: 150px;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #462e01;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+
+#menu a { 
+	display:block; 
+	color: #fff; 
+	text-decoration:none;
+}
+#menu > li,
+#menu > li li {
+	position: relative;
+	display:inline-block;
+	width: 110px;
+	padding: 6px 15px;
+	background-color: #777;
+	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
+}
+#menu > li li { background: transparent none; }
+#menu > li li a { color: #444; }
+#menu > li li:hover { background:#eee; }
+#menu > li:first-child {
+	border-right: 1px solid #777;
+	border-radius: 8px 0 0 8px;
+}
+#menu > li + li {
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #777;
+}
+#menu > li:last-child {
+	border-right: 0;
+	border-left: 1px solid #aaa;
+	border-radius: 0 8px 8px 0 ;
+}
+#menu > li:hover {
+	background-color: #999;
+	background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
+}
+#menu ul {
+	position: absolute;
+	top: 2em; left: 0;
+	max-height:0em;	
+	margin: 0; padding: 0;
+	background-color: #ddd;
+	background-image: linear-gradient(#fff,#ddd);
+	overflow: hidden;
+	transition: 1s max-height 0.3s;
+	border-radius: 0 0 8px 8px;
+}
+#menu > li:hover ul {
+	max-height: 20em;
+}
+
+
+
+img[alt="Carteancienne"] {
+  height: 500px;
+  border-radius: 15px;
+  margin-left: 20px;
+  float: left;
+}
+
+
+img[alt="Lesplantsdecafé"] {
+  border-radius: 10px;
+  margin: 35px 275px;
+}
+
+img[alt="Lesplantsdecafé"]:hover, table:hover {
+  -moz-transform:scale(1.1);
+  -moz-transition: all 0.8s;
+   transition: all 0.8s;
+   -moz-box-sizing: border-box;
+   -moz-transform: scale(1.06);
+}
+
+img[alt="unmarchanddecafé"] {
+  height: 450px;
+  width: 450px;
+  border-radius: 20px;
+  float: left;
+
+}
+
+div.marchand {
+  margin: 25px;
+
+}
+
+div.marchand p {
+  text-align: center;
+
+}
+figcaption {
+  margin-top: -25px;
+  margin-left: 475px;
+}
+
+div.préparations img {
+  height: 250px;  
+  border-radius: 20px;
+  position: relative;
+  left: 30px;
+}
+
+img[alt="cafetièrearabe"] + p, img[alt="cafetièreitalienne"] + p {
+  position: relative;
+  left: 65px;
+}
+
+p + p {
+  padding: 5px;
+}
+
+div.paragraphe p {
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+div.paragraphe2 p {
+  padding-bottom: 65px;
+}
+
+#Yemen {
+  padding-top: 45px;
+}
+
+
+div.acc {
+  background-color: #c8ad7f;
+  opacity: 0.9;
+  border: white thin;
+  padding: 10px 0px 10px;
+  margin: auto;
+  margin-top: 45px; 
+  text-align: center;
+  border-radius: 20px;
+  width: 100px;
+}
+
+div.acc:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform: scale(1.05);
+}
+
+
+p {
+   font-size: 17px; 
+   padding-left: 15px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 0%;
+    height: 0%;
+  }
+  #menu {
+    display: none;
+  }
+  h1 {
+    background-image: none;
+  }
+}
+ 
+@media print {
+  #menu {
+    display: none;
+  }
+  body {
+    display: inline-block;
+  }
+}
+
+
+
+
+

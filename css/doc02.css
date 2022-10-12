@@ -1,0 +1,188 @@
+#menu a { 
+	display:block; 
+	color: #fff; 
+	text-decoration:none;
+}
+#menu > li,
+#menu > li li {
+	position: relative;
+	display:inline-block;
+	width: 110px;
+	padding: 6px 15px;
+	background-color: #777;
+	background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);
+}
+#menu > li li { background: transparent none; }
+#menu > li li a { color: #444; }
+#menu > li li:hover { background:#eee; }
+#menu > li:first-child {
+	border-right: 1px solid #777;
+	border-radius: 8px 0 0 8px;
+}
+#menu > li + li {
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #777;
+}
+#menu > li:last-child {
+	border-right: 0;
+	border-left: 1px solid #aaa;
+	border-radius: 0 8px 8px 0 ;
+}
+#menu > li:hover {
+	background-color: #999;
+	background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);
+}
+#menu ul {
+	position: absolute;
+	top: 2em; left: 0;
+	max-height:0em;	
+	margin: 0; padding: 0;
+	background-color: #ddd;
+	background-image: linear-gradient(#fff,#ddd);
+	overflow: hidden;
+	transition: 1s max-height 0.3s;
+	border-radius: 0 0 8px 8px;
+}
+#menu > li:hover ul {
+	max-height: 20em;
+}
+
+
+table, td {
+  border: 1px solid #333;
+  text-align: center;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+table {
+  width: 850px;
+}
+
+h1 {
+  background-image: url("../images/fond-ecran.jpg"); 
+  padding: 30px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-position: center;
+  background-size: 100% auto;
+  color: #ffc987;
+  box-shadow: 4px 4px 8px 5px rgba(0,0,0,0.4);
+}
+
+body {
+    background-image: url("../images/bandeau.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;	
+    background-size: cover;	
+}
+
+div.acc {
+  background-color: #c8ad7f;
+  opacity: 0.8;
+  border: white thin;
+  padding: 10px 0px 10px;
+  margin: auto;
+  margin-top: 45px; 
+  text-align: center;
+  border-radius: 20px;
+  width: 100px;
+}
+
+div.acc:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform: scale(1.05);
+}
+
+table, td {
+  border: 2px solid black;
+  text-align: center;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  color: black;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  background-color: whitesmoke;
+
+}
+
+thead {
+  background-color: peachpuff;
+  color: black;
+}
+
+div.prem {
+  background: rgba(255,255,255,0.8);
+  padding-bottom: 60px;
+}
+  
+  
+h2 {
+  color: #462e01;
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  font-size: 17px;
+  padding-left: 15px;
+
+}
+
+div.prem p {
+  padding-top: 20px;
+}
+
+img[alt="café Brésil"] {
+  border-radius: 10px;
+  margin: 25px 250px;
+}
+
+img[alt="café Brésil"]:hover, table:hover {
+  -moz-transform:scale(1.1);
+  -moz-transition: all 0.8s;
+   transition: all 0.8s;
+   -moz-box-sizing: border-box;
+   -moz-transform: scale(1.06);
+}
+
+img[alt="Brésil"] {
+  height: 450px;
+  border-radius: 10px;
+}
+
+div.cadre {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 0%;
+    height: 0%;
+  }
+  #menu {
+    display: none;
+  }
+  h1 {
+    background-image: none;
+  }
+}
+ 
+@media print {
+  #menu {
+    display: none;
+  }
+  body {
+    display: inline-block;
+  }
+}
+
+
+
