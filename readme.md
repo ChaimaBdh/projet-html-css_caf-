@@ -1,6 +1,10 @@
 ## Mini projet HTML/CSS
 
-* BOUDEHANE Chaïma - section 4 Groupe 45
+## Récupérer le projet  
+
+```
+git clone git@github.com:ChaimaBdh/projet-html-css_caf-.git
+```
 
 Ouvrir le fichier `index.html` dans le navigateur de votre choix.
 
